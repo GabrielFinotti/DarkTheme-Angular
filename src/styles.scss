@@ -11,9 +11,13 @@
 
   list-style: none;
   outline: none;
+  text-decoration: none;
+  transition: 800ms ease;
 
   button {
     background: none;
+
+    cursor: pointer;
   }
 }
 
@@ -24,7 +28,7 @@
   --text-body: #4b4b4b;
 }
 
-:root .dark-them {
+:root .dark-theme {
   --primary: #0d47a1;
   --body: #4b4b4b;
   --text-menu: #ffffff;
@@ -33,4 +37,26 @@
 
 body {
   background-color: var(--body);
+}
+
+main {
+  width: 510px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 700;
+
+  margin: 50px 0 10px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1,
+p {
+  color: var(--text-body);
 }

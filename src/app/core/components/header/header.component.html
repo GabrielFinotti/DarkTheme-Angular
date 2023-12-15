@@ -1,11 +1,18 @@
 <header>
   <img src="../../../../assets/imgs/logo.svg" alt="Logo" />
   <ul>
-    <li>Home</li>
-    <li>Sobre</li>
     <li>
-      <button type="button">
-        <img src="../../../../assets/imgs/moon.svg" alt="Mudar tema do site" />
+      <a routerLink="">Home</a>
+    </li>
+    <li>
+      <a routerLink="/sobre">Sobre</a>
+    </li>
+    <li>
+      <button type="button" (click)="toggle()">
+        <img
+          src="../../../../assets/imgs/{{ icon }}.svg"
+          alt="Mudar tema do site"
+        />
       </button>
     </li>
   </ul>
